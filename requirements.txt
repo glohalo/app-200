@@ -1,2 +1,6 @@
 uvicorn
 gunicorn
+FastAPI
+Union
+json
+requests
