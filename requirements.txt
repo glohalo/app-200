@@ -2,5 +2,5 @@ uvicorn
 gunicorn
 FastAPI
 Union
-json
+json==1.0.0
 requests
