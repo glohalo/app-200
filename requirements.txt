@@ -1,2 +1,2 @@
 uvicorn
-web: gunicorn
+gunicorn
