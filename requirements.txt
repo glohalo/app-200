@@ -4,3 +4,4 @@ gunicorn
 uvicorn
 Union
 requests
+CORSMiddleware
