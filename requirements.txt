@@ -1,6 +1,6 @@
 Click==7.0
 fastapi
-gunicor
+gunicorn
 uvicorn
 Union
 requests
