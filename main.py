@@ -45,20 +45,17 @@ async def root():
 async def astronomy(page_num: int = 1, page_size: int = 10):
     start = (page_num - 1)*page_size
     end = start + page_size
-    params = {'start_date': '2022-02-17', 'end_date':'2022-05-28', 'hd':True}
+    params = {'start_date': '2022-02-19', 'end_date':'2022-05-30', 'hd':True}
     raw_response = requests.get(url, params=params)
     json_response = raw_response.json()
-    # #converting to ditionary json_Dict
-    # json_Dict = json.loads(json_response)
+  
     list_response = []
     for x in json_response:
-        print(x)
         element = {}
         if 'hdurl' in x:
             element['hdurl'] = x['hdurl']
         element['explanation'] = x['explanation']
         element['title'] = x['title']
-        # element['hdurl'] = x['hdurl']
         element['url'] = x['url']
         list_response.append(element)
         
